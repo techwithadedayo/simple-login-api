@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
     try {
-        await mongoose.connect('mongodb://localhost:27017/simpleLoginDB', {
+        await mongoose.connect('mongodb://host.docker.internal:27017/simpleLoginDB', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });

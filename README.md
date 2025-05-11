@@ -1,42 +1,16 @@
-Step1: Install Mongodb community Server Edition
+Step 1: Install Docker
 
-Step 2: Connect 
+Step 2: Create Dockerfile
+https://docs.docker.com/desktop/setup/install/windows-install/
 
+Step 3: Change the connection string to this: This works for windows desktop alone: config/db.js
+await mongoose.connect('mongodb://host.docker.internal:27017/simpleLoginDB');
 
-Step 3: Install npm and node js
+Step 3: Build Docker Image
+docker build -t simple-login-api:v1.0 .
 
-Step 4: Install dependencies
-- npm init -y
-- npm install express mongoose bcryptjs jsonwebtoken dotenv
-- npm install --save-dev nodemon
+Step 4: Run Container
+docker run --rm -p 5000:5000 simple-login-api:v1.0
 
-
-Step 5: Start application
-- npm start → runs your app normally with Node.js (ideal for production or Docker)
-
-- npm run dev → runs your app with nodemon (ideal for local development)
-
-Step 6: Test in Postman
-- Register
-
-POST http://localhost:5000/api/auth/register
-
-{
-  "email": "test@example.com",
-  "password": "123456"
-}
-
-- Login: You should get a JWT Token on successful login
-
-POST http://localhost:5000/api/auth/login
-
-{
-  "email": "test@example.com",
-  "password": "123456"
-}
-
-
-
-
-
-
+Step 5: 
+cd Docum
