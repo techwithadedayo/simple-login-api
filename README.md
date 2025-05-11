@@ -16,7 +16,12 @@ Step 5: Start application
 
 - npm run dev → runs your app with nodemon (ideal for local development)
 
-Step 6: Test in Postman
+Step 6:
+
+Install postman
+https://www.postman.com/downloads/
+
+Step 7: Test in Postman
 - Register
 
 POST http://localhost:5000/api/auth/register
