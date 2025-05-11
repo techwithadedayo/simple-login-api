@@ -12,5 +12,3 @@ docker build -t simple-login-api:v1.0 .
 Step 4: Run Container
 docker run --rm -p 5000:5000 simple-login-api:v1.0
 
-Step 5: 
-cd Docum
