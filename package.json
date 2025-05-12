@@ -1,7 +1,7 @@
 {
   "name": "simple-login-api",
   "version": "1.0.0",
-  "description": "",
+  "description": "Step1: Install Mongodb community Server Edition",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
@@ -14,9 +14,18 @@
     "dotenv": "^16.5.0",
     "express": "^5.1.0",
     "jsonwebtoken": "^9.0.2",
-    "mongoose": "^8.14.1"
+    "mongoose": "^8.14.2"
   },
   "devDependencies": {
     "nodemon": "^3.1.10"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techwithadedayo/simple-login-api.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/techwithadedayo/simple-login-api/issues"
+  },
+  "homepage": "https://github.com/techwithadedayo/simple-login-api#readme"
 }
