@@ -6,10 +6,10 @@ Step 3: Change the connection string to this: This works for windows desktop alo
 await mongoose.connect('mongodb://host.docker.internal:27017/simpleLoginDB');
 
 Step 3: Build Docker Image
-docker build -t simple-login-api:v1.0 .
+docker build -t techwithadedayo/simple-login-api:v1 .
 
 Step 4: Run Container
-docker run --rm -p 5000:5000 simple-login-api:v1.0
+docker run --rm -p 5000:5000 simple-login-api:v1
 
 Step 5: sign up on DockerHub and create a repository
 
